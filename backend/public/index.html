@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Cadastro de Produtos</h1>
+
+    <div class="form-container">
+        <input type="text" id="titulo" placeholder="Título">
+        <input type="text" id="descricao" placeholder="Descrição">
+        <input type="number" id="preco" placeholder="Preço">
+
+        <button onclick="criarProduto()">Criar Produto</button>
+    </div>
+
+    <h2>Produtos cadastrados</h2>
+    <div id="produtos"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
