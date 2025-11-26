@@ -13,9 +13,12 @@ Este é um projeto simples de CRUD (Create, Read, Update, Delete) de produtos us
 
 ### 1️⃣ Clone o repositório
 
-git clone https://github.com/SEU_USUARIO/NodeProject.git
+git clone https://github.com/viniciusmachadofragamatos/NodeProject.git
+
 cd NodeProject/backend
+
 # 2️⃣ Instale as dependências
+
 npm install
 
 # 3️⃣ Crie seu arquivo .env
@@ -39,6 +42,7 @@ sudo mysql -u root -p
 E execute:
 
 CREATE DATABASE ecolojia;
+
 USE ecolojia;
 
 CREATE TABLE produtos (
