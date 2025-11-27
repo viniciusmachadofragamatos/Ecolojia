@@ -1,101 +1,112 @@
 # 🛒 Projeto CRUD de Produtos – Node.js + MySQL
 
-Este é um projeto simples de CRUD (Create, Read, Update, Delete) de produtos usando:
+Este é um projeto simples de CRUD (Create, Read, Update, Delete) de produtos, utilizando uma arquitetura MVC e as seguintes tecnologias:
 
-- **Frontend:** HTML, CSS e JavaScript puro  
-- **Backend:** Node.js + Express  
-- **Banco:** MySQL  
-- **Arquitetura:** MVC  
+    Frontend: HTML, CSS e JavaScript puro
 
----
+    Backend: Node.js com Express
 
-## 🚀 Como rodar o projeto
+    Banco de Dados: MySQL
 
-### 1️⃣ Clone o repositório
+# 🚀 Como Rodar o Projeto
 
-git clone https://github.com/viniciusmachadofragamatos/NodeProject.git
+Para configurar e executar o projeto em sua máquina, siga os passos abaixo.
 
-cd NodeProject/backend
+# 1️⃣ Clone o Repositório
 
-# 2️⃣ Instale as dependências
+Abra seu terminal e execute os comandos:
+Bash
 
-npm install
+    git clone https://github.com/viniciusmachadofragamatos/NodeProject.git
+    cd NodeProject/backend
 
-# 3️⃣ Crie seu arquivo .env
+# 2️⃣ Instale as Dependências
 
-Baseado no arquivo .env.example:
+Dentro do diretório backend, instale os pacotes necessários:
+Bash
 
-cp .env.example .env
+    npm install
 
+# 3️⃣ Configure o Arquivo .env
 
-Abra o arquivo .env e coloque sua senha real do MySQL:
+Crie uma cópia do arquivo de exemplo e configure suas credenciais:
+Bash
 
-DB_PASS=sua_senha_aqui
+    cp .env.example .env
 
-# 4️⃣ Crie o banco de dados no MySQL
+Abra o novo arquivo .env e substitua sua_senha_aqui pela sua senha real do MySQL:
+Snippet de código
 
-Acesse o MySQL:
+    DB_PASS=sua_senha_aqui
 
-sudo mysql -u root -p
+# 4️⃣ Crie o Banco de Dados e a Tabela
 
+Acesse o MySQL no terminal:
+Bash
 
-E execute:
+    sudo mysql -u root -p
 
-CREATE DATABASE ecolojia;
+Em seguida, execute os comandos SQL para criar o banco de dados e a tabela produto:
+SQL
 
-USE ecolojia;
-
-CREATE TABLE produtos (
+    CREATE DATABASE ecolojia;
+    USE ecolojia;
+    CREATE TABLE produto(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100),
+    titulo VARCHAR(100),
     descricao TEXT,
-    preco DECIMAL(10,2)
-);
+    preco DECIMAL(10,2) 
+    );
 
-# 5️⃣ Execute o servidor
-npm start
+# 5️⃣ Execute o Servidor
 
+Inicie o servidor Node.js:
+Bash
 
-Servidor rodando em:
-👉 http://localhost:3000
+    npm start
 
-# 📂 Estrutura do projeto
+O servidor estará rodando em: 👉 http://localhost:3000
+
+# 📂 Estrutura do Projeto
+
+A organização do projeto segue o padrão MVC (Model-View-Controller):
 
 NodeProject/
- ├── backend/
+├── backend/
+│   ├── server.js          # Arquivo principal de inicialização
 
- │     ├── server.js
- 
- │     ├── routes/
- 
- │     ├── controllers/
- 
- │     ├── models/
- 
- │     ├── config/
- 
- │     ├── public/
- 
- │     └── .env.example
- 
- └── README.md
+│   ├── routes/            # Define as rotas da API
 
-# 📌 Funcionalidades
+│   ├── controllers/       # Lógica de negócio das rotas (C da MVC)
 
-✔️ Criar produtos
+│   ├── models/            # Interação com o banco de dados (M da MVC)
 
-✔️ Listar produtos
+│   ├── config/            # Configurações, como a conexão com o DB
 
-✔️ Editar produtos
+│   ├── public/            # Arquivos estáticos (HTML, CSS, JS do frontend - V da MVC)
 
-✔️ Excluir produtos
+│   └── .env.example
 
-✔️ Interface simples em HTML + CSS
+└── README.md
 
-✔️ Backend estruturado em MVC
+📌 Funcionalidades
 
-✔️ Conexão segura via .env
+O projeto implementa as operações básicas de gerenciamento de produtos:
 
-# 🙋 Autor
+    ✔️ Criar produtos
+
+    ✔️ Listar produtos
+
+    ✔️ Editar produtos
+
+    ✔️ Excluir produtos
+
+    ✔️ Interface simples em HTML + CSS
+
+    ✔️ Backend estruturado em MVC
+
+    ✔️ Conexão segura ao DB via arquivo .env
+
+🙋 Autor
 
 Projeto desenvolvido por Vinicius, Samuel e Marcos.
