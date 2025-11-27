@@ -98,4 +98,4 @@ NodeProject/
 
 # 🙋 Autor
 
-Projeto desenvolvido por Vinicius.
+Projeto desenvolvido por Vinicius, Samuel e Marcos.
