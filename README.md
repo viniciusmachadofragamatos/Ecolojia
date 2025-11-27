@@ -17,7 +17,7 @@ Para configurar e executar o projeto em sua máquina, siga os passos abaixo.
 Abra seu terminal e execute os comandos:
 Bash
 
-    git clone https://github.com/viniciusmachadofragamatos/NodeProject.git
+    git clone https://github.com/viniciusmachadofragamatos/ecolojia.git
     cd NodeProject/backend
 
 # 2️⃣ Instale as Dependências
