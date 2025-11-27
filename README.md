@@ -73,6 +73,7 @@ A organização do projeto segue o padrão MVC (Model-View-Controller):
 
 NodeProject/
 ├── backend/
+
 │   ├── server.js          # Arquivo principal de inicialização
 
 │   ├── routes/            # Define as rotas da API
