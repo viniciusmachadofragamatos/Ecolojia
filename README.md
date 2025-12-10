@@ -36,7 +36,9 @@ Bash
 
 Abra o novo arquivo .env e substitua sua_senha_aqui pela sua senha real do MySQL:
 Snippet de código
-
+    DB_HOST=localhost,
+    DB_USER=seu_usuario,
+    DB_NAME=ecolojia,
     DB_PASS=sua_senha_aqui
 
 # 4️⃣ Crie o Banco de Dados e a Tabela
